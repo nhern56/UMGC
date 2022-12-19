@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Web page title -->
+    <link rel=stylesheet  type=text/css href={{ url_for('static', filename='css/stylesheet.css') }} >
+    <title>Top 10 movies</title>
+</head>
+<body>
+    <!-- heading -->
+    <h1 style="margin-left: 627px; color: white; padding-bottom: 50px">
+        Top 10 movies:
+    </h1>
+    <!-- ordered list container for use with css -->
+    <div id ="movies" >
+        <!-- ordered list -->
+        <ol type="1">
+            <li><a style="text-decoration: none " href="http://127.0.0.1:5000/netflix/">Top 10 movies on Netflix
+                <img src="/static/movies/netflix.jpg" alt="HTML tutorial" style="width:300px;height:200px;"></a></li>
+            <li><a style="text-decoration: none" href="http://127.0.0.1:5000/hulu/">Top 10 movies on Hulu
+                <img src="/static/movies/Hulu.jpg" alt="HTML tutorial" style="width:300px;height:200px;"></a></li>
+            <li><a style="text-decoration: none" href="http://127.0.0.1:5000/prime/">Top 10 movies on Prime
+                <img src="/static/movies/prime.jpg" alt="HTML tutorial" style="width:300px;height:200px;"></a></li>
+        </ol>
+    </div>
+    <!-- date and time paragraph -->
+    <h2 style=" position: center; bottom: 0; left: 0; width: 100%; color: white; margin-left: 510px">
+        The date and time is: {{ date_time }}
+    </h2>
+</body>
