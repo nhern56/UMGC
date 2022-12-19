@@ -1,0 +1,6 @@
+ClassA ClassB 
+ClassB ClassC
+ClassC ClassE
+ClassE ClassD ClassF
+ClassD ClassB
+
