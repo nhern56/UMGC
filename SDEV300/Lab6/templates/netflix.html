@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+    <!-- Web page title -->
+    <link rel=stylesheet  type=text/css href={{ url_for('static', filename='css/stylesheet.css') }} >
+    <title>Top 10 Netflix movies</title>
+</head>
+<body>
+    <!-- container for use with css -->
+    <div id = "Home">
+        <!-- home link -->
+        <h1 style="color: white">
+            <a href="http://127.0.0.1:5000/">
+                Home
+            </a>
+        </h1>
+    </div>
+    <!-- header image link container for use with css -->
+    <div id="img">
+        <h1>
+            <a href="https://netflix.com">
+            <img src="/static/movies/netflix.jpg" alt="HTML tutorial" style="width:128px;height:128px;">
+            </a>
+        </h1>
+    </div>
+    <!-- text header container for use with css -->
+    <div id="head">
+        <h2>
+            Top 10 movies on Netflix:
+        </h2>
+    </div>
+    <!-- ordered list container for use with css -->
+    <div id ="movies">
+        <!-- ordered list -->
+        <ol type="1">
+            <li><a><p>The Departed</p>
+                <img src="/static/movies/departed.jpeg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.
+                </p></a></li>
+            <li><a>Monty Python and the Holy Grail
+                <img src="/static/movies/monty.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail, encountering many, very silly obstacles.
+                </p></a></li>
+            <li><a>The Irishman
+                <img src="/static/movies/irishman.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Hitman Frank Sheeran looks back at the secrets he kept as a loyal member of the Bufalino crime family.
+                </p></a></li>
+            <li><a>I Am Not Your Negro
+                <img src="/static/movies/Iamnot.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Writer James Baldwin tells the story of race in modern America with his unfinished novel, Remember This House.
+                </p></a></li>
+            <li><a>A Nightmare on Elm Street
+                <img src="/static/movies/nightmare.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Teenager Nancy Thompson must uncover the dark truth concealed by her parents after she and her friends become targets of the spirit of a serial killer with a bladed glove in their dreams, in which if they die, it kills them in real life.
+                </p></a></li>
+            <li><a>Uncut Gems
+                <img src="/static/movies/uncut.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    With his debts mounting and angry collectors closing in, a fast-talking New York City jeweler risks everything in hope of staying afloat and alive.
+                </p></a></li>
+            <li><a>She's Gotta Have It
+                <img src="/static/movies/shesgottahaveit.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Story of a woman and her three lovers.
+                </p></a></li>
+            <li><a>Full Metal Jacket
+                <img src="/static/movies/fullmetal.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.
+                </p></a></li>
+            <li><a>Apocalypse Now Redux
+                <img src="/static/movies/apocalypse.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A U.S. Army officer serving in Vietnam is tasked with assassinating a renegade Special Forces Colonel who sees himself as a god.
+                </p></a></li>
+            <li><a>It Follows
+                <img src="/static/movies/itfollows.jpeg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A young woman is followed by an unknown supernatural force after a sexual encounter.
+                </p></a></li>
+        </ol>
+    </div>
+    <!-- Source: pastemagazine.com -->
+    <!-- date and time paragraph -->
+    <h3 style=" position: center; bottom: 0; left: 0; width: 100%; margin-left: 570px; color: white">
+        The date and time is: {{ date_time }}
+    </h3>
+</body>

@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+    <!-- Web page title -->
+    <link rel=stylesheet  type=text/css href={{ url_for('static', filename='css/stylesheet.css') }} >
+    <title>Top 10 Hulu Movies</title>
+</head>
+<body>
+    <!-- container for use with css -->
+    <div id = "Home">
+        <!-- home link -->
+        <h1 style="color: white">
+            <a href="http://127.0.0.1:5000/">
+                Home
+            </a>
+        </h1>
+    </div>
+    <!-- image link container for use with css -->
+    <div id="img">
+        <h1>
+            <a href="https://hulu.com">
+            <img src="/static/movies/Hulu.jpg" alt="HTML tutorial" style="width:128px;height:128px;">
+            </a>
+        </h1>
+    </div>
+    <!-- text header container for use with css -->
+    <div id="head">
+        <h2>
+            Top 10 movies on Hulu:
+        </h2>
+    </div>
+    <!-- ordered list container for use with css -->
+    <div id="movies">
+        <!-- ordered list -->
+        <ol type="1">
+            <li><a>Parasite
+                <img src="/static/movies/parasyte.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.
+                </p></a></li>
+            <li><a>Akira
+                <img src="/static/movies/akira.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath who can only be stopped by a teenager, his gang of biker friends and a group of psychics.
+                </p></a></li>
+            <li><a>Sputnik
+                <img src="/static/movies/sputnik.jpeg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    The lone survivor of an enigmatic spaceship incident hasn't returned home alone - hiding inside his body is a dangerous creature.
+                </p></a></li>
+            <li><a>Palm Springs
+                <img src="/static/movies/PalmSprings.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Stuck in a time loop, two wedding guests develop a budding romance while living the same day over and over again.
+                </p></a></li>
+            <li><a>Portrait of a Lady on Fire
+                <img src="/static/movies/portrait.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.
+                </p></a></li>
+            <li><a>Let the Right One In
+                <img src="/static/movies/lettherightonein.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Oskar, an overlooked and bullied boy, finds love and revenge through Eli, a beautiful but peculiar girl.
+                </p></a></li>
+            <li><a>Billy Madison
+                <img src="/static/movies/billymadison.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    In order to inherit his fed up father's hotel empire, an immature and lazy man must repeat grades 1-12 all over again.
+                </p></a></li>
+            <li><a>The Act of Killing
+                <img src="/static/movies/theactofkilling.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A documentary which challenges former Indonesian death-squad leaders to reenact their mass-killings in whichever cinematic genres they wish, including classic Hollywood crime scenarios and lavish musical numbers.
+                </p></a></li>
+            <li><a>Flee
+                <img src="/static/movies/flee.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    FLEE tells the extraordinary true story of a man, Amin, on the verge of marriage which compels him to reveal his hidden past for the first time.
+                </p></a></li>
+            <li><a>Her Smell
+                <img src="/static/movies/hersmell.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    AA self-destructive punk rocker struggles with sobriety while trying to recapture the creative inspiration that led her band to success.
+                </p></a></li>
+        </ol>
+    </div>
+<!-- Source: pastemagazine.com -->
+    <!-- date and time paragraph -->
+    <h3 style="position: center; bottom: 0; left: 0; width: 100%; margin-left: 599px; color: white">
+        The date and time is: {{ date_time }}
+    </h3>
+</body>

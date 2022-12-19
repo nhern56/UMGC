@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+    <!-- Web page title -->
+    <link rel=stylesheet  type=text/css href={{ url_for('static', filename='css/stylesheet.css') }} >
+    <title>Top 10 Prime movies</title>
+</head>
+<body>
+    <!-- container for use with css -->
+    <div id = "Home">
+        <!-- home link -->
+        <h1 style="color: white">
+            <a href="http://127.0.0.1:5000/">
+                Home
+            </a>
+        </h1>
+    </div>
+    <!-- header iamage link container for use with css -->
+    <div id="img">
+        <h1>
+            <a href="https://www.amazon.com/gp/video/storefront">
+            <img src="/static/movies/prime.jpg" alt="HTML tutorial" style="width:128px;height:128px;">
+            </a>
+        </h1>
+    </div>
+    <!-- text header container for use with css -->
+    <div id="head">
+        <h2>
+            Top 10 movies on Prime:
+        </h2>
+    </div>
+    <!-- unordered list container for use with css -->
+    <div id="movies">
+        <!-- unordered list -->
+        <ul>
+            <li><a>One Night in Miami
+                <img src="/static/movies/miami.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A fictional account of one incredible night where icons Muhammad Ali, Malcolm X, Sam Cooke, and Jim Brown gathered discussing their roles in the Civil Rights Movement and cultural upheaval of the 60s.
+                </p></a></li>
+            <li><a>Raging Bull
+                <img src="/static/movies/ragingbull.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.
+                </p></a></li>
+            <li><a>Fargo
+                <img src="/static/movies/fargo.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    Minnesota car salesman Jerry Lundegaard's inept crime falls apart due to his and his henchmen's bungling and the persistent police work of the quite pregnant Marge Gunderson.
+                </p></a></li>
+            <li><a>Lincoln
+                <img src="/static/movies/lincoln.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
+                </p></a></li>
+            <li><a>Train to Busan
+                <img src="/static/movies/traintobusan.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    While a zombie virus breaks out in South Korea, passengers struggle to survive on the train from Seoul to Busan.
+                </p></a></li>
+            <li><a>Young Frankenstein
+                <img src="/static/movies/youngfrankenstein.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    An American grandson of the infamous scientist, struggling to prove that his grandfather was not as insane as people believe, is invited to Transylvania, where he discovers the process that reanimates a dead body.
+                </p></a></li>
+            <li><a>Tangerine
+                <img src="/static/movies/tangerine.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A hooker tears through Tinseltown on Christmas Eve searching for the pimp who broke her heart.
+                </p></a></li>
+            <li><a>The Terminator
+                <img src="/static/movies/terminator.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.
+                </p></a></li>
+            <li><a>Manchester by the Sea
+                <img src="/static/movies/manchester.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A depressed uncle is asked to take care of his teenage nephew after the boy's father dies.
+                </p></a></li>
+            <li><a>You Were Never Really Here
+                <img src="/static/movies/youwere.jpg" alt="HTML tutorial" style="width:300px;height:200px;margin-left: 534px">
+                <p>
+                    A traumatized veteran unafraid of violence tracks down missing girls for a living. When a job spins out of control, Joe's nightmares overtake him as a conspiracy is uncovered leading to what could be his death trip or his awakening.
+                </p></a></li>
+        </ul>
+    </div>
+    <!-- Source: pastemagazine.com -->
+    <!-- date and time paragraph -->
+    <h3 style=" position: center; bottom: 0; left: 0; width: 100%; margin-left: 599px; color: white;">
+        The date and time is: {{ date_time }}
+    </h3>
+</body>
