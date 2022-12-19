@@ -1,0 +1,4 @@
+((y*2)-((y/x)+z)),x=8,y=16,z=5; \*Expected value equals=25*/
+((x=z)|(y=x)),x=7,y=2,z=3; \*Expected value equals=0*/
+(((x:y?z)>y)!),x=10,y=6,z=3; \*Expected value equals=0*/
+((y>x)&(x<z)),x=9,y=18,z=10; \*Expected value equals = 1*/
