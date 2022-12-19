@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+<head>
+    <!-- Web page title -->
+
+    <title style="text-align: center">Top 10 movies</title>
+</head>
+{% block content %}
+
+    <!-- heading -->
+    <h1 style="text-align: center; color: white; padding-bottom: 50px">
+        Top 10 movies:
+    </h1>
+    <!-- ordered list container for use with css -->
+    <div id ="movies" >
+        <!-- ordered list -->
+        <ol type="1">
+            <li><a style="text-decoration: none " href="http://127.0.0.1:5000/netflix/">Top 10 movies on Netflix
+                <img src="/static/movies/netflix.jpg" alt="HTML tutorial" style="width:300px;height:200px;"></a></li>
+            <li><a style="text-decoration: none" href="http://127.0.0.1:5000/hulu/">Top 10 movies on Hulu
+                <img src="/static/movies/Hulu.jpg" alt="HTML tutorial" style="width:300px;height:200px;"></a></li>
+            <li><a style="text-decoration: none" href="http://127.0.0.1:5000/prime/">Top 10 movies on Prime
+                <img src="/static/movies/prime.jpg" alt="HTML tutorial" style="width:300px;height:200px;"></a></li>
+        </ol>
+    </div>
+
+{% endblock %}

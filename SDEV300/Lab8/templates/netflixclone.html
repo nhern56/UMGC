@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movies</title>
+    <link rel=stylesheet  type=text/css href={{ url_for('static', filename='css/netflix.css') }} >
+</head>
+    <body>
+        <header class="showcase">
+			<div class="showcase-top">
+				<a href="{{ url_for('auth.login') }}" class="btn btn-rounded">Sign In</a>
+			</div>
+			<div class="showcase-content">
+				<h1>See what's next</h1>
+				<p>Search for the perfect movie and show across all sites</p>
+				<a href="{{ url_for('auth.signup') }}" class="btn btn-xl"
+					>Sign up now! <i class="fas fa-chevron-right btn-icon"></i
+				></a>
+                <p style="font-size: small; padding-top: 10px">Do you already have an account?</p>
+                <p><a href='{{ url_for('auth.login') }}' style="font-size: large">Login</a></p>
+			</div>
+		</header>
+		<section class="tabs">
+			<div class="container">
+				<div id="tab-1" class="tab-item tab-border">
+					<i class="fas fa-door-open fa-3x"></i>
+					<p class="hide-sm">Search across all streaming sites</p>
+				</div>
+				<div id="tab-2" class="tab-item">
+					<i class="fas fa-tablet-alt fa-3x"></i>
+					<p class="hide-sm">Create a list to watch later</p>
+				</div>
+				<div id="tab-3" class="tab-item">
+					<i class="fas fa-tags fa-3x"></i>
+					<p class="hide-sm">Better search filters</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="tab-content">
+			<div class="container">
+				<!-- Tab Content 1 -->
+				<div id="tab-1-content" class="tab-content-item show">
+					<div class="tab-1-content-inner">
+						<div>
+							<p class="text-lg">
+								You can find any movie from any streaming platform such as Netflix, Prime, and Hulu
+							</p>
+						</div>
+						<img src="/static/movies/streaming%20platforms.png" alt="" />
+					</div>
+				</div>
+
+				<!-- Tab Content 2 -->
+				<div id="tab-2-content" class="tab-content-item">
+					<div class="text-center">
+						<p class="text-lg">
+							Save a list of movies or shows to watch later
+						</p>
+					</div>
+				</div>
+
+				<!-- Tab Content 3 -->
+				<div id="tab-3-content" class="tab-content-item">
+					<div class="text-center">
+						<p class="text-lg">
+							Better and more specific filters to find the perfect movie or show
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <script type="text/javascript" src="{{ url_for('static', filename='netlfixclonejs.js') }}"></script>
+
+    </body>
